@@ -24,8 +24,8 @@ CREATE TABLE users (
   phone TEXT UNIQUE,
   password TEXT NOT NULL,
 
-  role TEXT DEFAULT 'user'
-    CHECK (role IN ('admin','manager','support','developer','user')),
+  role TEXT DEFAULT 'client'
+    CHECK (role IN ('admin','manager','support','developer','marketing','client')),
 
   is_active BOOLEAN DEFAULT TRUE,
   is_verified BOOLEAN DEFAULT FALSE,

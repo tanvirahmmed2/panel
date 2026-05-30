@@ -1,0 +1,138 @@
+dashboard-system/
+│
+├── app/
+│
+│   ├── layout.js
+│   ├── globals.css
+│
+│   ├── page.js                  # redirect based on role
+│
+│   ├── auth/
+│   │   ├── login/
+│   │   ├── register/
+│   │   ├── logout/
+│   │   └── forgot-password/
+│   │
+│   ├── dashboard/
+│   │
+│   │   ├── admin/
+│   │   │   ├── layout.js
+│   │   │   ├── page.js
+│   │   │   ├── users/
+│   │   │   ├── roles/
+│   │   │   ├── analytics/
+│   │   │   ├── settings/
+│   │   │   ├── notices/
+│   │   │   ├── jobs/
+│   │   │   ├── system-logs/
+│   │   │   └── revenue/
+│   │   │
+│   │   ├── manager/
+│   │   │   ├── layout.js
+│   │   │   ├── page.js
+│   │   │   ├── products/
+│   │   │   ├── projects/
+│   │   │   ├── tasks/
+│   │   │   ├── team/
+│   │   │   ├── leads/
+│   │   │   ├── reports/
+│   │   │   └── performance/
+│   │   │
+│   │   ├── developer/
+│   │   │   ├── layout.js
+│   │   │   ├── page.js
+│   │   │   ├── my-tasks/
+│   │   │   ├── projects/
+│   │   │   ├── commits/
+│   │   │   ├── reports/
+│   │   │   └── activity/
+│   │   │
+│   │   ├── marketing/
+│   │   │   ├── layout.js
+│   │   │   ├── page.js
+│   │   │   ├── leads/
+│   │   │   ├── campaigns/
+│   │   │   ├── analytics/
+│   │   │   └── reports/
+│   │   │
+│   │   ├── support/
+│   │   │   ├── layout.js
+│   │   │   ├── page.js
+│   │   │   ├── tickets/
+│   │   │   ├── live-chat/
+│   │   │   ├── messages/
+│   │   │   └── resolved/
+│   │   │
+│   │   ├── client/
+│   │   │   ├── layout.js
+│   │   │   ├── page.js
+│   │   │   ├── projects/
+│   │   │   ├── services/
+│   │   │   ├── billing/
+│   │   │   ├── support/
+│   │   │   ├── reviews/
+│   │   │   └── profile/
+│   │
+│   ├── api/
+│   │   ├── auth/
+│   │   ├── users/
+│   │   ├── products/
+│   │   ├── projects/
+│   │   ├── tasks/
+│   │   ├── leads/
+│   │   ├── support/
+│   │   ├── reports/
+│   │   ├── notices/
+│   │   ├── analytics/
+│   │   └── notifications/
+│
+│
+├── components/
+│
+│   ├── layout/
+│   │   ├── Sidebar.js
+│   │   ├── Navbar.js
+│   │   ├── Header.js
+│   │   └── Breadcrumbs.js
+│   │
+│   ├── ui/
+│   │   ├── Button.js
+│   │   ├── Input.js
+│   │   ├── Modal.js
+│   │   ├── Table.js
+│   │   ├── Card.js
+│   │   └── Badge.js
+│   │
+│   ├── charts/
+│   │   ├── RevenueChart.js
+│   │   ├── TrafficChart.js
+│   │   ├── TaskProgressChart.js
+│   │   └── LeadChart.js
+│   │
+│   ├── dashboard/
+│   │   ├── StatCards.js
+│   │   ├── RecentActivity.js
+│   │   ├── TaskBoard.js
+│   │   ├── NotificationPanel.js
+│   │   └── QuickActions.js
+│
+│
+├── lib/
+│   ├── db.js
+│   ├── query.js
+│   ├── auth.js
+│   ├── jwt.js
+│   ├── middleware.js
+│   ├── permissions.js
+│   ├── constants.js
+│   └── utils.js
+│
+│
+├── store/
+│   ├── authStore.js
+│   ├── dashboardStore.js
+│   └── notificationStore.js
+│
+├── middleware.js
+├── public/
+└── package.json
